@@ -12,7 +12,7 @@ public class PlayerAttackState : PlayerAbilityState
 
     private bool setVelocity;
     private bool shouldCheckFlip;
-    public PlayerAttackState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
+    public PlayerAttackState(Player player, StateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
     {
     }
 

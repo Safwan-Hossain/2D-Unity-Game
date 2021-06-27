@@ -103,7 +103,7 @@
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\UI\KeyUI.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Timeline\ScrollingText\ScrollingTextTrack.cs" />
     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TransformTween\TransformTweenBehaviour.cs" />
-    <Compile Include="Assets\Scripts\StateMachine\Player\PlayerFSM\PlayerState.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\Player\PlayerStates\PlayerState.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Utility\VisibleBubbleUp.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Core\LayerMaskExtensions.cs" />
     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlClip.cs" />
@@ -206,7 +206,7 @@
     <Compile Include="Assets\Scripts\StateMachine\Player\PlayerStates\SubStates\PlayerCrouchMoveState.cs" />
     <Compile Include="Assets\Scripts\Core\CoreComponents\Movement.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Timeline\ScrollingText\ScrollingTextBehaviour.cs" />
-    <Compile Include="Assets\Scripts\StateMachine\Player\PlayerFSM\Player.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\Player\Player.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Localization\TranslatedPhrases.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Effect\BossDoorStateManager.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Character\StateMachineBehaviours\Enemies\ChomperDeathSMB.cs" />
@@ -227,15 +227,15 @@
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Objects\Platforms\PlatformCatcher.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Core\CameraShaker.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\SceneManagement\SceneControllerWrapper.cs" />
-    <Compile Include="Assets\Scripts\StateMachine\PlayerStateMachine.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\General\StateMachine.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Core\InteractOnTrigger.cs" />
     <Compile Include="Assets\2DGamekit\Scripts\_cripts\Effect\WaterArea.cs" />
     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\ScreenFader\ScreenFaderMixerBehaviour.cs" />
     <Compile Include="Assets\Scripts\StateMachine\Player\PlayerStates\SubStates\PlayerWallGrabState.cs" />
     <Compile Include="Assets\Scripts\StateMachine\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Scripts\StateMachine\Enemy\EnemyState.cs" />
-    <Compile Include="Assets\Scripts\StateMachine\Enemy\EnemyStateMachine.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\Enemy\EnemyStates\EnemyState.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\SO_EnemyData.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\General\State.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

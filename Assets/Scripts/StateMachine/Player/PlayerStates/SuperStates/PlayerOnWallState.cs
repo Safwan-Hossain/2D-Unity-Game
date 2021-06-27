@@ -11,7 +11,7 @@ public class PlayerOnWallState : PlayerState
     protected bool ledgeIsValid;
     protected int xInput;
 
-    public PlayerOnWallState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
+    public PlayerOnWallState(Player player, StateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
     {
     }
 

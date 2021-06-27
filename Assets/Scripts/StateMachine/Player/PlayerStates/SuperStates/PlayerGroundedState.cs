@@ -15,7 +15,7 @@ public class PlayerGroundedState : PlayerState
     //Check Variables
     protected bool isTouchingCeiling;
     private bool isGrounded;
-    public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
+    public PlayerGroundedState(Player player, StateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
     {
     }
 

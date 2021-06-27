@@ -13,7 +13,7 @@ public class PlayerDashState : PlayerAbilityState
 
     private Vector2 dashDirection;
     private Vector2 dashDirectionInput;
-    public PlayerDashState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
+    public PlayerDashState(Player player, StateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
     {
     }
 

@@ -17,7 +17,7 @@ public class PlayerLedgeClimbState : PlayerState
     private bool jumpInput;
     private int xInput;
     private int yInput;
-    public PlayerLedgeClimbState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
+    public PlayerLedgeClimbState(Player player, StateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
     {
     }
 

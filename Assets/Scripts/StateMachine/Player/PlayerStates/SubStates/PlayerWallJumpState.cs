@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerWallJumpState : PlayerAbilityState
 {
     private int wallJumpDirection;
-    public PlayerWallJumpState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
+    public PlayerWallJumpState(Player player, StateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
     {
     }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     #region State Variables
-    public EnemyStateMachine StateMachine { get; private set; }
+    public StateMachine StateMachine { get; private set; }
 
     [SerializeField]
     private SO_EnemyData enemyData;
@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         Core = GetComponentInChildren<Core>();
-        StateMachine = new EnemyStateMachine();
+        StateMachine = new StateMachine();
     }
     private void Start()
     {

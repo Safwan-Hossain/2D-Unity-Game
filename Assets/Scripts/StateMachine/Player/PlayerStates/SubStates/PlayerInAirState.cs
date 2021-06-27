@@ -28,7 +28,7 @@ public class PlayerInAirState : PlayerState
 
     private float startWallJumpCoyoteTime;
 
-    public PlayerInAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
+    public PlayerInAirState(Player player, StateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
     {
     }
 

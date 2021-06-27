@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     #region State Varaibles
-    public PlayerStateMachine StateMachine { get; private set; }
+    public StateMachine StateMachine { get; private set; }
     public PlayerIdleState IdleState { get; private set; }
     public PlayerMoveState MoveState { get; private set; }
     public PlayerInAirState InAirState { get; private set; }
@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         Core = GetComponentInChildren<Core>();
-        StateMachine = new PlayerStateMachine();
+        StateMachine = new StateMachine();
 
         IdleState = new PlayerIdleState(this, StateMachine, playerData, "idle");
         MoveState = new PlayerMoveState(this, StateMachine, playerData, "move");

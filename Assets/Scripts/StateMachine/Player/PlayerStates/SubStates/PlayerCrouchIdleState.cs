@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerCrouchIdleState : PlayerGroundedState
 {
 
-    public PlayerCrouchIdleState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
+    public PlayerCrouchIdleState(Player player, StateMachine stateMachine, PlayerData playerData, string animatorBoolName) : base(player, stateMachine, playerData, animatorBoolName)
     {
     }
 
