@@ -16,7 +16,6 @@ public class Movement : CoreComponent
         base.Awake();
 
         RB = GetComponentInParent<Rigidbody2D>();
-
         FacingDirection = 1;
     }
 
@@ -56,6 +55,23 @@ public class Movement : CoreComponent
         workspace.Set(CurrentVelocity.x, velocity);
         RB.velocity = workspace;
         CurrentVelocity = workspace;
+    }
+    public void ApplyImpulse(float forceX, float forceY)
+    {
+        workspace.Set(forceX, forceY);
+        RB.AddForce(workspace, ForceMode2D.Impulse);
+    }
+
+    public void ApplyImpulseX(float force)
+    {
+        workspace.Set(force, 0);
+        RB.AddForce(workspace, ForceMode2D.Impulse);
+    }
+
+    public void ApplyImpulseY(float force)
+    {
+        workspace.Set(0, force);
+        RB.AddForce(workspace, ForceMode2D.Impulse);
     }
 
     private void Flip()

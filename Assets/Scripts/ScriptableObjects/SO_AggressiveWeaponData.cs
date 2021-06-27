@@ -12,10 +12,17 @@ public class SO_AggressiveWeaponData : SO_WeaponData
     {
         amountOfAttacks = attackDetails.Length;
         movementSpeed = new float[amountOfAttacks];
+        movementForceX = new float[amountOfAttacks];
+        movementForceY = new float[amountOfAttacks];
+        decelerationFactor = new float[amountOfAttacks];
 
         for (int i = 0; i < amountOfAttacks; i++)
         {
             movementSpeed[i] = attackDetails[i].movementSpeed;
+            movementForceX[i] = attackDetails[i].movementForceX;
+            movementForceY[i] = attackDetails[i].movementForceY;
+            decelerationFactor[i] = attackDetails[i].decelerationFactor;
         }
     }
 }
+

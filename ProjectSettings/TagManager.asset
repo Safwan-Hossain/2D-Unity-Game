@@ -23,7 +23,7 @@ TagManager:
   - Cameras
   - Damageable
   - Weapon
-  - 
+  - Projectiles
   - 
   - 
   - 
@@ -53,4 +53,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3084172875
+    locked: 0
+  - name: Projectiles
+    uniqueID: 3150859873
     locked: 0

@@ -7,5 +7,8 @@ public struct AttackDetails
 {
     public string attackName;
     public float movementSpeed;
+    public float movementForceX;
+    public float movementForceY;
+    public float decelerationFactor;
     public float damageAmount;
 }

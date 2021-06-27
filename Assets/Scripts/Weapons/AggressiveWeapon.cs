@@ -17,7 +17,7 @@ public class AggressiveWeapon : Weapon
         }
         else
         {
-            Debug.Log("No aggressive weapon data/ wrong data for weapon");
+            Debug.Log("NO AGGRESIVE WEAPON DATA / WRONG DATA FOR WEAPON => AggressiveWeapon.cs");
         }
     }
     public override void AnimationActionTrigger()

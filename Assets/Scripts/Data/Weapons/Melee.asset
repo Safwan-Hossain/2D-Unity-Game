@@ -9,6 +9,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dab701584210eb4299600cd9029ca2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ff9907028df3ed4c936c2c1438aaf3c, type: 3}
   m_Name: Melee
   m_EditorClassIdentifier: 
+  attackDetails:
+  - attackName: Attack 1
+    movementSpeed: 3.5
+    movementForceX: 0
+    movementForceY: 0
+    decelerationFactor: 0
+    damageAmount: 0
+  - attackName: Attack 2
+    movementSpeed: 3
+    movementForceX: -3
+    movementForceY: 0
+    decelerationFactor: 1.2
+    damageAmount: 0
+  - attackName: Attack 3
+    movementSpeed: 0
+    movementForceX: 15
+    movementForceY: 0
+    decelerationFactor: 0.52
+    damageAmount: 0

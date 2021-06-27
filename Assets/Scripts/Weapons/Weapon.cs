@@ -37,7 +37,26 @@ public class Weapon : MonoBehaviour
     public virtual void AnimationStopMovementTrigger()
     {
         attackState.SetPlayerVelocity(0f);
+        attackState.SetVelocityCheck(false);
     }
+    
+    public virtual void AnimationStartForceTrigger()
+    {
+        float movementForceX = weaponData.movementForceX[attackCounter];
+        float movementForceY = weaponData.movementForceY[attackCounter];
+
+        attackState.ApplyImpulse(movementForceX, movementForceY);
+    }
+
+    public virtual void AnimationStopForceTrigger()
+    {
+        float decelerationFactor = weaponData.decelerationFactor[attackCounter];
+        float movementForceX = weaponData.movementForceX[attackCounter];
+        float movementForceY = weaponData.movementForceY[attackCounter];
+
+        attackState.ApplyImpulse(-movementForceX * decelerationFactor, -movementForceY * decelerationFactor);
+    }
+
     public virtual void AnimationTurnOnFlipTrigger()
     {
         attackState.SetFlipCheck(true);
